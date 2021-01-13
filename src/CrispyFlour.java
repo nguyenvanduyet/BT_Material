@@ -15,7 +15,7 @@ public  class CrispyFlour extends Material implements Discount{
 
     @Override
     public LocalDate getExpiryDate() {
-        return super.getDateOfManufacture().plusYears(1);
+        return getDateOfManufacture().plusYears(1);
     }
 
     @Override

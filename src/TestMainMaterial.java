@@ -38,7 +38,7 @@ public class TestMainMaterial {
                     managerMaterial.testPriceMaxAndMinOfMaterial();
                     break;
                 case 5:
-                    managerMaterial.removeExpiredMaterial();
+                    removeMaterial();
                     break;
                 case 6:
                     managerMaterial.writeFile();
@@ -87,5 +87,10 @@ public class TestMainMaterial {
         }
         System.out.println("________________________________________________");
 
+    }
+    public static void removeMaterial(){
+        System.out.println("nhập vị trí vật liệu muốn xóa ");
+        int index= Integer.parseInt(sc.nextLine());
+        managerMaterial.remove(index);
     }
 }

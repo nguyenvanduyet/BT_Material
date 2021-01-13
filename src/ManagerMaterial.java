@@ -33,13 +33,14 @@ public class ManagerMaterial {
         System.out.println("sản phẩm có giá nhỏ nhất là : " + materialList.get(0));
     }
 
-    public void removeExpiredMaterial() {
-        for (Material m : materialList) {
-            if (m.getExpiryDate().isAfter(LocalDate.now())) {
-                materialList.remove(m);
+    public void remove(int index) {
+        for (int i = 0; i < materialList.size(); i++) {
+            if (i==index){
+                materialList.remove(i);
+                return;
             }
-            System.out.println(m);
         }
+
     }
 
     public void writeFile() {
