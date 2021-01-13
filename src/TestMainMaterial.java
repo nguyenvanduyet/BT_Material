@@ -15,7 +15,7 @@ public class TestMainMaterial {
             System.out.println("2. hiện thị danh sách nguyên liệu");
             System.out.println("3. sắp sếp theo giá nguyên liệu tăng dần");
             System.out.println("4. hiện thị nguyên liệu có giá lớn nhất và nhỏ nhất");
-            System.out.println("5. xóa nguyên liệu đã hết hạn khỏi danh sách");
+            System.out.println("5. xóa nguyên liệu ở vị trí bất kì của danh sách");
             System.out.println("6. ghi file");
             System.out.println("7. đọc file");
             System.out.println("0. thoát chương trình");
